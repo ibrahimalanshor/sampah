@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Api\Garbage\CreateGarbageRequest;
 use App\Models\Garbage;
 use App\Models\Profile;
-use Illuminate\Http\Request;
 
 class GarbageController extends Controller
 {

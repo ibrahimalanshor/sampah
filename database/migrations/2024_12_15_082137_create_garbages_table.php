@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('garbages', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->unsignedInteger('capacity');
+            $table->enum('type', ['organik', 'anorganik', 'residu']);
+            $table->unsignedInteger('amount');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('garbages');
     }
 };
