@@ -17,13 +17,14 @@ class ProfileController extends Controller
     public function detailProfile() {
         return Profile::firstOrCreate([], [
             'name' => 'TPA',
-            'capacity' => 100
+            'capacity' => 0
         ]);
     }
     
     /**
      * updateProfile
      *
+     * @param  mixed $request
      * @return void
      */
     public function updateProfile(UpdateProfileRequest $request) {
