@@ -67,4 +67,10 @@ class GarbageController extends Controller
         return $garbage;
     }
 
+    public function deleteGarbage(Garbage $garbage) {
+        $garbage->delete();
+
+        return $garbage;
+    }
+
 }

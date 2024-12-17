@@ -15,5 +15,5 @@ Route::controller(GarbageController::class)
         Route::get('/sampah', 'getAllGarbage');
         Route::post('/sampah', 'createGarbage');
         Route::put('/sampah/{garbage}', 'updateGarbage');
-        Route::delete('/sampah/{id}', 'deleteGarbage');
+        Route::delete('/sampah/{garbage}', 'deleteGarbage');
     });
